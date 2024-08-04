@@ -2,20 +2,22 @@
     /* font-family: Arial, sans-serif; */
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     line-height: 1.6;
 }
 
 body{
-    box-sizing: border-box;
     line-height: 1.6;
     background-color: #EAF6F6;
     cursor: pointer;
 }
 
 nav{
+    position: fixed;
     display: flex;
+    width: 100%;
     background: #025858;
     padding: 40px 50px;
     justify-content: space-between;
@@ -65,19 +67,27 @@ h2, h1{
 }
 
 /* About section */
-
-img{
-    margin: 20px;
+.about img{
+    margin-top: 50px;
+    height: 350px;
 }
 
 .about{
-    margin: 20px 30px;
-    
+    /* margin: 20px 30px; */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.about-me{
+    width: 70%;
+    padding: 50px;
 }
 
 /* My Skills */
 #skills, #projects, #contact, #about {
-    width: 90%;
+    padding-top: 100px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -164,6 +174,8 @@ img{
 
 .share{
     padding-top: 2rem;
+    text-align: center;
+    align-content: center;
 }
 
 .share a{
